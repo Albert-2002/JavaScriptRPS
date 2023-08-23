@@ -8,19 +8,24 @@ if (computerchoice==1){
     computers = 'SCISSOR'
 }
 
-const btn1 = document.querySelector('.btn');
+let trial = 0;
+
+const btn1 = document.querySelector('.btn1');
 btn1.addEventListener('click', () => {
   trial = 1;
+  console.log(trial);
 });
 
-const btn2 = document.querySelector('#btn');
-btn.addEventListener('click', () => {
+const btn2 = document.querySelector('.btn2');
+btn2.addEventListener('click', () => {
   trial = 2;
+  console.log(trial);
 });
 
-const btn3 = document.querySelector('#btn');
-btn.addEventListener('click', () => {
+const btn3 = document.querySelector('.btn3');
+btn3.addEventListener('click', () => {
   trial = 3;
+  console.log(trial);
 });
 
 if (trial==1){
