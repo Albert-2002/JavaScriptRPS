@@ -8,31 +8,44 @@ if (computerchoice==1){
     computers = 'SCISSOR'
 }
 
-let trial = 0;
+function RPS(player,computer){
+  if (player==computer){
+      return 'DRAW! - Try Again'
+  } else if (player == 'ROCK' && computer == 'SCISSOR'){
+      return 'YOU WIN!'
+  } else if (player == 'PAPER' && computer == 'ROCK'){
+      return 'YOU WIN!'
+  } else if (player == 'SCISSOR' && computer == 'PAPER'){
+      return 'YOU WIN!'
+  } else {
+      return 'YOU LOSE!'
+  }
+}
+
+let playerchoice;
 
 const btn1 = document.querySelector('.btn1');
 btn1.addEventListener('click', () => {
-  trial = 1;
-  console.log(trial);
+  //trial = 1;
+  playerchoice = 'ROCK';
+  //console.log(trial);
 });
 
 const btn2 = document.querySelector('.btn2');
 btn2.addEventListener('click', () => {
-  trial = 2;
-  console.log(trial);
+  //trial = 2;
+  playerchoice = 'PAPER'
+  //console.log(trial);
 });
 
 const btn3 = document.querySelector('.btn3');
 btn3.addEventListener('click', () => {
-  trial = 3;
-  console.log(trial);
+  //trial = 3;
+  playerchoice = 'SCISSOR'
+  //console.log(trial);
 });
 
-if (trial==1){
-    playerchoice = 'ROCK'
-} else if (trial==2){
-    playerchoice = 'PAPER'
-} else {
-    playerchoice = 'SCISSOR'
-}
+
+
+
 
